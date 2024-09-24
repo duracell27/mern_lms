@@ -6,6 +6,7 @@ export interface INotification extends Document {
   message: string;
   status: string;
   userId: IUser;
+  createdAt: Date;
 }
 
 const notificationSchema = new Schema<INotification>(
